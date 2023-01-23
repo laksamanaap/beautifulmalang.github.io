@@ -1,0 +1,278 @@
+@keyframes Fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+html {
+    scroll-behavior: smooth;
+    animation-name: Fade-in;
+	animation-duration: 1s;
+    font-family: 'Poppins';
+    background-color: #e1e1e1;
+}
+
+/* @media screen and (min-width:768px;) {
+    .col-md-8 img {
+        height: 1000px;
+    }
+} */
+
+
+/*** Navbar ***/
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+    color: #FFFFFF;
+    font-size: 15px;
+    background-color: #52CEAE;
+    border: #52CEAE;
+    box-shadow: 0px 5px 0px #009D75;
+}
+
+.btn.btn-primary.hero {
+    width: 300px;
+}
+
+/* .btn-hero {
+    width: 300px;
+    height: auto;
+    color: #FFFFFF;
+    font-size: 15px;
+    border: 3px solid #52CEAE;
+    background-color: transparent;
+} */
+
+.btn-primary a {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* .btn-hero:hover {
+    width: 300px;
+    height: auto;
+    color: #FFFFFF;
+    font-size: 15px;
+    border: 3px solid #52CEAE;
+    background-color: #52CEAE;
+    
+} */
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    margin-right: 25px;
+    padding: 35px 0;
+    color: #FFFFFF !important;
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+    transition: .5s;
+}
+
+.nav-item a {
+    color: #FFFFFF;
+    font: bold;
+}
+
+.nav-item a.dropdown-item {
+    color: #000000;
+    font-weight: bold;
+}
+
+/* .navbar-expand-lg {
+    height: 90px;
+} */
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 20px 0;
+    color: #000000 !important;
+}
+
+.sticky-top.navbar-light .nav-item .nav-link{
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+.sticky-top.navbar-light .nav-item{
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+.sticky-top.navbar-light .nav-item:hover{
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #646464 !important;
+}
+
+.navbar-light .navbar-brand img {
+    max-height: 75px;
+    transition: .5s;
+}
+
+.sticky-top.navbar-light .navbar-brand img {
+    max-height: 45px;
+}
+
+@media (max-width: 991.98px) {
+    .sticky-top.navbar-light {
+        position: relative;
+        background: #FFFFFF;
+        color: #000000;
+    }
+
+    .navbar-light .navbar-collapse {
+        margin-top: 15px;
+        border-top: 1px solid #DDDDDD;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .sticky-top.navbar-light .navbar-nav .nav-link .nav-item {
+        padding: 10px 0;
+        margin-left: 0;
+        color: #000000 !important;
+    }
+
+    .navbar-light .navbar-brand img {
+        max-height: 45px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-light {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-bottom: 1px solid rgba(256, 256, 256, .1);
+        z-index: 999;
+    }
+    
+    .sticky-top.navbar-light {
+        position: fixed;
+        background: #FFFFFF;
+    }
+
+    .navbar-light .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        bottom: -1px;
+        left: 50%;
+        background: #000000;
+        transition: .5s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .nav-link.active::before {
+        width: calc(100% - 2px);
+        left: 1px;
+    }
+
+    .navbar-light .navbar-nav .nav-link.nav-contact::before {
+        display: none;
+    }
+}
+
+/*** Hero Header ***/
+.hero-header {
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/Balai_Kota_Malang.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    border-radius: 0px 0px 50px 50px;
+    filter: drop-shadow(0px 10px 0px #14614D);
+    animation-name: Transition;
+	animation-duration: 1s;
+}
+
+.hero-header .text-center h1 {
+    font-family: 'Kaushan Script';
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.hero-header .text-center p {
+    font-family: 'Kalam';
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255, 255, 255, .5);
+}
+
+@media screen and (max-width: 500px) {
+    .hero-header .text-center h1 {
+        font-family: 'Kaushan Script';
+        font-size: 55px;
+        font-weight: 600;
+    }
+
+    .hero-header .text-center p {
+        font-family: 'Kalam';
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .hero-header .form-control::placeholder {
+        font-size: 10px;
+    }
+
+    
+
+    
+    
+}
+
+
+/***  Detail Page ***/
+
+div.container.detailpage {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 20px;
+}
+
+/* div.container.detailpage.row {
+    border: 2px solid red;
+} */
+
+div.container.detailpage nav.breadcrumb ol li {
+    font-size: 20px;
+    font-weight: 300;
+    color: #646464;
+}
+
+div.container.detailpage nav.breadcrumb ol li:active {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+div.container.detailpage nav.breadcrumb ol li a {
+    font-weight: 300;
+    color: #646464;
+}
+
+.row img.img-fluid {
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.49);
+}
