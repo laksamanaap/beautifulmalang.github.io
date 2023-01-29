@@ -29,9 +29,9 @@ html {
 .btn.btn-secondary {
     color: #FFFFFF;
     font-size: 15px;
-    background-color: #52CEAE;
-    border: #52CEAE;
-    box-shadow: 0px 5px 0px #009D75;
+    background-color: #8b6735;
+    border: #8b6735;
+    box-shadow: 0px 5px 0px #7b5014a6;
 }
 
 /* .btn-square {
@@ -193,13 +193,13 @@ html {
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/Image/alun-alun-tugu-malang-1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.889), rgba(20, 20, 31, 0.613)), url(../img/Image/aryafoto2.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 900px;
     border-radius: 0px 0px 50px 50px;
-    filter: drop-shadow(0px 10px 0px #14614D);
+    filter: drop-shadow(0px 10px 0px #8b6735);
     animation-name: Transition;
 	animation-duration: 1s;
 }
@@ -208,17 +208,103 @@ html {
     font-family: 'Kaushan Script';
     font-size: 80px;
     font-weight: 600;
+    color: rgb(255, 237, 212)!important;
 }
 
 .hero-header .text-center p {
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 40px;
+    color: rgb(255, 237, 212)!important;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
 }
+
+
+/*** About Me ***/
+.card{
+    border:none;
+
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card:before{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#E1BEE7;
+    transform:scaleY(1);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#8E24AA;
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after{
+    transform:scaleY(1);
+}
+
+
+.fonts{
+    font-size:11px;
+}
+
+.social-list{
+    display:flex;
+    list-style:none;
+    justify-content:center;
+    padding:0;
+}
+
+.social-list li{
+    padding:10px;
+    color:#8E24AA;
+    font-size:19px;
+}
+
+
+.buttons button:nth-child(1){
+       border:1px solid #8E24AA !important;
+       color:#8E24AA;
+       height:40px;
+}
+
+.buttons button:nth-child(1):hover{
+       border:1px solid #8E24AA !important;
+       color:#fff;
+       height:40px;
+       background-color:#8E24AA;
+}
+
+.buttons button:nth-child(2){
+       border:1px solid #8E24AA !important;
+       background-color:#8E24AA;
+       color:#fff;
+        height:40px;
+}
+
+
 
 
 /*** Section Title ***/
@@ -297,7 +383,7 @@ html {
 /*** Trending Tours Card ***/
 
 /* .container {
-    border: 2px solid red ;
+    border: 2px solid red ;`
 } */
 
 /* .row {
@@ -310,9 +396,14 @@ html {
     font-family: 'Poppins',sans-serif;
     letter-spacing: 0.05em;
     font-size: 48px;
-    color: #003E2E;
+    color: #8b6735;
     text-shadow: 0px 9px 9px rgba(0, 0, 0, 0.25);
 }
+
+.container h6 {
+    color: #5f3700;
+}
+
 
 /* .tes {
     box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
@@ -322,7 +413,9 @@ html {
 /* trending tours */
 
 div.package-item {
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+border-radius: 20px;
+height: 600px;
 /* border: 4px #2ef0c999 solid; */
 border-radius: 20px;
 height: 600px;
@@ -377,15 +470,15 @@ height: 600px;
 }
 
 .text-container {
-    border-top: 5px solid #009d767c;
+    border-top: 5px solid #8b673591;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: #21e9ba43;
-    height: fit-content;
-    color: #003f23;
-    font-weight: medium;
+    background-color: #8b673579;
+    height: 115px;
+    color: #ffffff;
+    font-weight: 500;
     font-family: 'Poppins';
     font-size: 15px;
 }
@@ -397,13 +490,13 @@ height: 600px;
 }
 
 .package-item-2 img {
-    border: 4px #009D75 solid;
+    border: 4px #8b6735d4 solid;
     transition: .5s;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
-    height: 320px;
+    height: 300px !important;
     width: max-content;
 }
 
